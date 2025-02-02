@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        max-width: 768px;
+    }
+    .container {
+        max-width: 700px;
+    }
+    .header {
+        height: 1560px;
+    }
+
+    .header-content {
+        flex-wrap: wrap;
+        & > div {
+            width: 700px;
+            height: 790px;
+        }
+    }
+    .header-info {
+        & > p {
+            max-width: 100%;
+        }
+    }
+}
