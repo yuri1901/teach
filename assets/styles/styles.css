@@ -41,8 +41,8 @@ a.primapy-btn {
     color: var(--neutral-color900);
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 20px;
     & > span {
         width: 24px;
         height: 24px;
@@ -191,6 +191,120 @@ body {
                 line-height: 17px;
                 letter-spacing: -1px;
             }
+        }
+    }
+}
+
+/* main */
+
+.main {
+    padding: 120px 0;
+}
+.info-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.info-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:first-child {
+        & > div:first-of-type {
+            width: 560px;
+            height: 530px;
+            & > img {
+                border-radius: 16px;
+            }
+        }
+        & > div:last-of-type {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+    &:last-child {
+        & > div:first-of-type {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        & > div:last-of-type {
+            width: 560px;
+            height: 530px;
+            & > img {
+                border-radius: 16px;
+            }
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: calc(0% + 31px);
+                left: 0%;
+                transform: translate(-67%, 0%);
+                width: 120px;
+                height: 140px;
+                background: url(../images/icons/logos-tech.svg) no-repeat;
+            }
+        }
+    }
+    & h2 {
+        max-width: 530px;
+        font-size: 3.125rem;
+        line-height: 4rem;
+        letter-spacing: -2px;
+        color: var(--neutral-color900);
+    }
+    & h2.show-circle {
+        & > span {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0 0 0 -15px;
+                width: 160px;
+                height: 70px;
+                background: url(../images/icons/pattern-circle.png) no-repeat;
+            }
+        }
+    }
+    & p {
+        max-width: 532px;
+        font-family: "Inter", sans-serif;
+        color: var(--neutral-color700);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -0.5px;
+        & > strong {
+            font-weight: 700;
+        }
+    }
+    & ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    & li {
+        max-width: 410px;
+        font-family: "Inter", sans-serif;
+        color: var(--neutral-color700);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -0.5px;
+        position: relative;
+        padding-left: 40px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0%, -50%);
+            width: 29px;
+            height: 28px;
+            background: url(../images/icons/icon-check.svg) no-repeat;
         }
     }
 }
