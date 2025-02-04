@@ -8,6 +8,9 @@
     .header {
         height: 1120px;
     }
+    .header-inner {
+        gap: 50px;
+    }
     .header-info {
         & > h1 {
             max-width: 100%;
@@ -19,14 +22,12 @@
             line-height: 1.3rem;
         }
     }
-
     .header-content {
         & > div {
             width: 100%;
             height: 380px;
         }
     }
-
     .reviews {
         align-items: center;
     }
@@ -36,6 +37,7 @@
     .main {
         padding: 60px 0;
     }
+    /* info */
     .info-block {
         & h2 {
             font-size: 2.125rem;
@@ -70,5 +72,49 @@
                 }
             }
         }
+    }
+    /* block */
+    .block {
+        display: none;
+    }
+    /* price */
+    .price-inner {
+        & > h2 {
+            font-size: 2.125rem;
+            text-align: left;
+        }
+    }
+    .price-blocks {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    /* quote */
+    .quote-inner {
+        & p {
+            font-size: 1.5rem;
+            line-height: 110%;
+        }
+    }
+    /* footer */
+    .footer-inner {
+        height: 540px;
+        padding-top: 50px;
+        justify-content: flex-start;
+        gap: 24px;
+        & h3 {
+            font-size: 2.125rem;
+            color: var(--neutral-color100);
+        }
+        & > a.primapy-btn {
+            margin-top: 16px;
+            font-size: 1rem;
+        }
+    }
+    .footer-bottom {
+        margin-top: auto;
+        height: 100px;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
     }
 }
