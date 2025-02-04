@@ -18,7 +18,7 @@
             line-height: 46px;
         }
         & > a.primapy-btn {
-            font-size: inherit;
+            font-size: 1rem;
             line-height: 1.3rem;
         }
     }
